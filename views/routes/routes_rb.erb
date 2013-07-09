@@ -1,0 +1,12 @@
+<section id="routes_rb" class="slide">
+  <h2>routes.rb</h2>
+
+  <script type="syntaxhighlighter" class="brush: ruby">
+    <![CDATA[       
+      Community::Application.routes.draw do
+        get '/posts/:id', to: 'posts#show', as: 'post'
+      end
+    ]]>
+  </script>
+
+</section>
