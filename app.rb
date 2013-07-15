@@ -77,6 +77,10 @@ class App < Sinatra::Base
     redirect '/index.html'
   end
 
+  get "/views" do
+    erb :views
+  end
+
   helpers do
     include Sprockets::Helpers
   end
