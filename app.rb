@@ -73,12 +73,12 @@ class App < Sinatra::Base
     erb :controllers
   end
 
-  get "/" do
-    redirect '/index.html'
-  end
-
   get "/views" do
     erb :views
+  end
+
+  get "/" do
+    redirect '/index.html'
   end
 
   helpers do
