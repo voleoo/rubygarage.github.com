@@ -7,4 +7,24 @@
 @import "compass";
 @import "bootstrap";
 @import "main";
+<<<<<<< HEAD
 @import "navigations";
+=======
+
+.columns {
+  @include pie-clearfix;
+
+  .column-half {
+    float: left; 
+    width: 48%;
+    +.column-half {
+      float: right;
+    }
+  }
+
+  .column-third {
+    float: left; 
+    width: 32%;
+  }
+}
+>>>>>>> garage/master

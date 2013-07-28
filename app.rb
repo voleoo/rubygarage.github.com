@@ -77,10 +77,23 @@ class App < Sinatra::Base
     erb :views
   end
 
+  get "/htmlcssbasics" do
+    erb :htmlcssbasics
+  end
+
+  get "/cssarchitecture" do
+    erb :cssarchitecture
+  end
+
+
+  get "/cssbestpractices" do
+    erb :cssbestpractices
+  end
+
   get "/" do
     redirect '/index.html'
   end
-
+  
   helpers do
     include Sprockets::Helpers
   end
